@@ -31,4 +31,9 @@ public class AnimePresenterlmp implements AnimePresenter {
     public void obtenerDatos() {
         animemodel.obtenerDatos();
     }
+
+    @Override
+    public void mostrarTop1() {
+
+    }
 }

@@ -8,4 +8,5 @@ import java.util.ArrayList;
 public interface  AnimeView {
     void mostrarDatos(ArrayList<AnimeResults> animeresultadolista);
   //  void operacionInvalida();
+    void mostrarTop1();
 }

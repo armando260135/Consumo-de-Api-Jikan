@@ -1,4 +1,4 @@
-package com.example.proyecto2;
+package com.example.proyecto2.Adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.example.proyecto2.Model.AnimeResults;
+import com.example.proyecto2.R;
 
 import java.util.ArrayList;
 
@@ -26,14 +27,14 @@ public class ListaAnimeAdapter extends RecyclerView.Adapter<ListaAnimeAdapter.Vi
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_anime,parent,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_prueba_slider,parent,false);
         return new ViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         AnimeResults a = dataset.get(position);
-        holder.nombreTextView.setText(a.getTitle());
+        holder.nombreTextView.setText(a.getTitle()+"\n"+"S04 - E47");
         Glide.with(context)
                 .load(a.getImage_url())
                 .placeholder(R.drawable.ic_launcher_background)

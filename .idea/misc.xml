@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Arman/AndroidStudioProjects/Consumo-de-Api-Jikan/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/Arman/AndroidStudioProjects/Consumo-de-Api-Jikan/app/src/main/res/layout/item_anime.xml" value="0.2" />
+        <entry key="..\:/Users/Arman/AndroidStudioProjects/Consumo-de-Api-Jikan/app/src/main/res/layout/item_prueba_slider.xml" value="0.25" />
         <entry key="..\:/Users/Arman/AndroidStudioProjects/Proyecto2/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Arman/AndroidStudioProjects/Proyecto2/app/src/main/res/layout/activity_splash.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Arman/AndroidStudioProjects/Proyecto2/app/src/main/res/layout/item_anime.xml" value="0.1671195652173913" />
@@ -11,6 +14,9 @@
         <entry key="..\:/Users/Arman/OneDrive/Escritorio/proyecto2/Proyecto2/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Arman/OneDrive/Escritorio/proyecto2/Proyecto2/app/src/main/res/layout/activity_splash.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Arman/OneDrive/Escritorio/proyecto2/Proyecto2/app/src/main/res/layout/item_anime.xml" value="0.22" />
+        <entry key="..\:/Users/RYZEN/AndroidStudioProjects/Nueva carpeta/Consumo-de-Api-Jikan/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/RYZEN/AndroidStudioProjects/Nueva carpeta/Consumo-de-Api-Jikan/app/src/main/res/layout/item_anime.xml" value="0.1" />
+        <entry key="..\:/Users/RYZEN/AndroidStudioProjects/Nueva carpeta/Consumo-de-Api-Jikan/app/src/main/res/layout/item_prueba_slider.xml" value="0.33" />
       </map>
     </option>
   </component>

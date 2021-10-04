@@ -9,5 +9,6 @@ public interface AnimePresenter {
     void mostrarDatos(ArrayList<AnimeResults> animeresultadolista);
    // void operacionInvalida();
     void obtenerDatos();
+    void mostrarTop1();
 
 }
