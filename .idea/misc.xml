@@ -3,9 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Arman/AndroidStudioProjects/Consumo-de-Api-Jikan/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/Arman/AndroidStudioProjects/Consumo-de-Api-Jikan/app/src/main/res/drawable/ic_add.xml" value="0.2203125" />
+        <entry key="..\:/Users/Arman/AndroidStudioProjects/Consumo-de-Api-Jikan/app/src/main/res/drawable/ic_add_2.xml" value="0.1125" />
+        <entry key="..\:/Users/Arman/AndroidStudioProjects/Consumo-de-Api-Jikan/app/src/main/res/drawable/ic_add_white.xml" value="0.1125" />
+        <entry key="..\:/Users/Arman/AndroidStudioProjects/Consumo-de-Api-Jikan/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Arman/AndroidStudioProjects/Consumo-de-Api-Jikan/app/src/main/res/layout/bottom_nav_menu.xml" value="0.18342391304347827" />
         <entry key="..\:/Users/Arman/AndroidStudioProjects/Consumo-de-Api-Jikan/app/src/main/res/layout/item_anime.xml" value="0.2" />
         <entry key="..\:/Users/Arman/AndroidStudioProjects/Consumo-de-Api-Jikan/app/src/main/res/layout/item_prueba_slider.xml" value="0.25" />
+        <entry key="..\:/Users/Arman/AndroidStudioProjects/Consumo-de-Api-Jikan/app/src/main/res/layout/item_slider_best.xml" value="0.33" />
+        <entry key="..\:/Users/Arman/AndroidStudioProjects/Consumo-de-Api-Jikan/app/src/main/res/menu/bottom_nav.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Arman/AndroidStudioProjects/Proyecto2/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Arman/AndroidStudioProjects/Proyecto2/app/src/main/res/layout/activity_splash.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Arman/AndroidStudioProjects/Proyecto2/app/src/main/res/layout/item_anime.xml" value="0.1671195652173913" />

@@ -4,6 +4,24 @@ public class AnimeResults {
     private String title;
     private String type;
     private String image_url;
+    private String episodes;
+    private String score;
+
+    public String getScore() {
+        return score;
+    }
+
+    public void setScore(String score) {
+        this.score = score;
+    }
+
+    public String getEpisodes() {
+        return episodes;
+    }
+
+    public void setEpisodes(String episodes) {
+        this.episodes = episodes;
+    }
 
     public String getTitle() {
         return title;
