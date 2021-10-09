@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.Fragment.PrimerFragment"
+    android:background="@color/black">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif"
+        android:textColor="#ff0038"
+        android:textSize="69dp"
+        android:text="Fragment Mihome" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewSliderInicio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="6dp"
+                android:text="Best Anime"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/nointernet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tu internet es caca"
+                android:textColor="#FFFFFF"
+                android:textSize="34sp"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/TextViewTodaySelection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="Today´s Selection"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="#0E0303"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/TextViewScroll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Category Cars"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewScroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#0E0303"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

@@ -28,12 +28,30 @@ public class AnimePresenterlmp implements AnimePresenter {
     }
 
     @Override
+    public void mostrarDatosTop(ArrayList<AnimeResults> animeResultsArrayListTop) {
+        view.mostrarDatosTop(animeResultsArrayListTop);
+    }
+
+    @Override
+    public void mostrarDatosSpecial(ArrayList<AnimeResults> animeResultsArrayListSpecial) {
+        view.mostrarDatosSpecial(animeResultsArrayListSpecial);
+
+    }
+
+    @Override
     public void obtenerDatos() {
         animemodel.obtenerDatos();
     }
 
     @Override
-    public void mostrarTop1() {
+    public void obtenerDatosTop() {
+        animemodel.obtenerDatosTop();
+    }
+
+    @Override
+    public void obtenerDatosSpecial() {
+        animemodel.obtenerDatosSpecial();
 
     }
+
 }

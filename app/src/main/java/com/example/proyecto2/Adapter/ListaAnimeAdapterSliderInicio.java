@@ -16,47 +16,44 @@ import com.example.proyecto2.R;
 
 import java.util.ArrayList;
 
-public class ListaAnimeAdapterBest extends RecyclerView.Adapter<ListaAnimeAdapterBest.ViewHolder>{
+public class ListaAnimeAdapterSliderInicio extends RecyclerView.Adapter<ListaAnimeAdapterSliderInicio.ViewHolder> {
     private ArrayList<AnimeResults> dataset;
     private Context context;
 
-    public ListaAnimeAdapterBest(ArrayList<AnimeResults> animeResultsArrayListSpecial, Context context){
+    public ListaAnimeAdapterSliderInicio(ArrayList<AnimeResults> animeResultsArrayListTop, Context context) {
         this.context = context;
-        this.dataset = animeResultsArrayListSpecial;
+        this.dataset = animeResultsArrayListTop;
     }
+
 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_slider_best,parent,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_slider_principal,parent,false);
         return new ViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         AnimeResults a = dataset.get(position);
-        holder.nombreTextView.setText(a.getTitle()+"\n"+"Score: " + a.getScore());
-        //holder.textViewCapitulo.setText(a.getEpisodes());
+        holder.TextViewNombreInicio.setText(a.getTitle());
         Glide.with(context)
                 .load(a.getImage_url())
                 .placeholder(R.drawable.ic_launcher_background)
-                .into(holder.fotoImageView);
+                .into(holder.ImageViewSliderPrincipal);
     }
+
     @Override
     public int getItemCount() {
         return dataset.size();
     }
-
-    public static class ViewHolder extends RecyclerView.ViewHolder {
-        private TextView nombreTextView,textViewCapitulo;
-        private ImageView fotoImageView;
-
+    public class ViewHolder extends RecyclerView.ViewHolder{
+        private ImageView ImageViewSliderPrincipal;
+        private TextView TextViewNombreInicio;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            nombreTextView = itemView.findViewById(R.id.nombreTextView);
-            fotoImageView = itemView.findViewById(R.id.fotoImageView);
-//          textViewCapitulo = itemView.findViewById(R.id.TextViewCapitulo);
+            ImageViewSliderPrincipal = itemView.findViewById(R.id.ImageViewSliderPrincipal);
+            TextViewNombreInicio = itemView.findViewById(R.id.TextViewNombrePrincipal);
         }
     }
-
 }
