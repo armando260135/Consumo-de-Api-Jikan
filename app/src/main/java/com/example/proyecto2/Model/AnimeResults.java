@@ -6,6 +6,20 @@ public class AnimeResults {
     private String image_url;
     private String episodes;
     private String score;
+    private String synopsis;
+    private String start_date;
+    private String end_date;
+    private String members;
+    private String rated;
+
+
+    public String getSynopsis() {
+        return synopsis;
+    }
+
+    public void setSynopsis(String synopsis) {
+        this.synopsis = synopsis;
+    }
 
     public String getScore() {
         return score;
@@ -45,5 +59,37 @@ public class AnimeResults {
 
     public void setImage_url(String image_url) {
         this.image_url = image_url;
+    }
+
+    public String getStart_date() {
+        return start_date;
+    }
+
+    public void setStart_date(String start_date) {
+        this.start_date = start_date;
+    }
+
+    public String getEnd_date() {
+        return end_date;
+    }
+
+    public void setEnd_date(String end_date) {
+        this.end_date = end_date;
+    }
+
+    public String getMembers() {
+        return members;
+    }
+
+    public void setMembers(String members) {
+        this.members = members;
+    }
+
+    public String getRated() {
+        return rated;
+    }
+
+    public void setRated(String rated) {
+        this.rated = rated;
     }
 }

@@ -7,8 +7,16 @@ import java.util.ArrayList;
 
 public interface AnimePresenter {
     void mostrarDatos(ArrayList<AnimeResults> animeresultadolista);
-   // void operacionInvalida();
+    void mostrarDatosTop(ArrayList<AnimeResults> animeResultsArrayListTop);
+    void mostrarDatosSpecial(ArrayList<AnimeResults> animeResultsArrayListSpecial);
+
+    //para today
     void obtenerDatos();
-    void mostrarTop1();
+    //para Best Anime
+    void obtenerDatosTop();
+    //para special
+    void obtenerDatosSpecial();
+
+
 
 }

@@ -6,11 +6,30 @@
         <entry key="..\:/Users/Arman/AndroidStudioProjects/Consumo-de-Api-Jikan/app/src/main/res/drawable/ic_add.xml" value="0.2203125" />
         <entry key="..\:/Users/Arman/AndroidStudioProjects/Consumo-de-Api-Jikan/app/src/main/res/drawable/ic_add_2.xml" value="0.1125" />
         <entry key="..\:/Users/Arman/AndroidStudioProjects/Consumo-de-Api-Jikan/app/src/main/res/drawable/ic_add_white.xml" value="0.1125" />
+        <entry key="..\:/Users/Arman/AndroidStudioProjects/Consumo-de-Api-Jikan/app/src/main/res/drawable/ic_baseline_person_pin_24.xml" value="0.2203125" />
+        <entry key="..\:/Users/Arman/AndroidStudioProjects/Consumo-de-Api-Jikan/app/src/main/res/drawable/ic_favoritos.xml" value="0.2203125" />
+        <entry key="..\:/Users/Arman/AndroidStudioProjects/Consumo-de-Api-Jikan/app/src/main/res/drawable/ic_play_circule.xml" value="0.2203125" />
+        <entry key="..\:/Users/Arman/AndroidStudioProjects/Consumo-de-Api-Jikan/app/src/main/res/drawable/imagen_redonda.xml" value="0.2203125" />
+        <entry key="..\:/Users/Arman/AndroidStudioProjects/Consumo-de-Api-Jikan/app/src/main/res/layout/activity_anime_demo_detalle.xml" value="0.17798913043478262" />
+        <entry key="..\:/Users/Arman/AndroidStudioProjects/Consumo-de-Api-Jikan/app/src/main/res/layout/activity_anime_detalle.xml" value="0.4083333333333333" />
+        <entry key="..\:/Users/Arman/AndroidStudioProjects/Consumo-de-Api-Jikan/app/src/main/res/layout/activity_anime_detalle_circulo.xml" value="0.16893115942028986" />
+        <entry key="..\:/Users/Arman/AndroidStudioProjects/Consumo-de-Api-Jikan/app/src/main/res/layout/activity_anime_setting.xml" value="0.14719202898550723" />
+        <entry key="..\:/Users/Arman/AndroidStudioProjects/Consumo-de-Api-Jikan/app/src/main/res/layout/activity_anime_tv.xml" value="0.14719202898550723" />
         <entry key="..\:/Users/Arman/AndroidStudioProjects/Consumo-de-Api-Jikan/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Arman/AndroidStudioProjects/Consumo-de-Api-Jikan/app/src/main/res/layout/activity_prueba.xml" value="0.14719202898550723" />
+        <entry key="..\:/Users/Arman/AndroidStudioProjects/Consumo-de-Api-Jikan/app/src/main/res/layout/activity_splash.xml" value="0.15579710144927536" />
         <entry key="..\:/Users/Arman/AndroidStudioProjects/Consumo-de-Api-Jikan/app/src/main/res/layout/bottom_nav_menu.xml" value="0.18342391304347827" />
+        <entry key="..\:/Users/Arman/AndroidStudioProjects/Consumo-de-Api-Jikan/app/src/main/res/layout/fragment_cuarto.xml" value="0.14719202898550723" />
+        <entry key="..\:/Users/Arman/AndroidStudioProjects/Consumo-de-Api-Jikan/app/src/main/res/layout/fragment_primer.xml" value="0.1" />
+        <entry key="..\:/Users/Arman/AndroidStudioProjects/Consumo-de-Api-Jikan/app/src/main/res/layout/fragment_quinto.xml" value="0.14719202898550723" />
+        <entry key="..\:/Users/Arman/AndroidStudioProjects/Consumo-de-Api-Jikan/app/src/main/res/layout/fragment_segundo.xml" value="0.14719202898550723" />
+        <entry key="..\:/Users/Arman/AndroidStudioProjects/Consumo-de-Api-Jikan/app/src/main/res/layout/fragment_tercer.xml" value="0.18" />
         <entry key="..\:/Users/Arman/AndroidStudioProjects/Consumo-de-Api-Jikan/app/src/main/res/layout/item_anime.xml" value="0.2" />
+        <entry key="..\:/Users/Arman/AndroidStudioProjects/Consumo-de-Api-Jikan/app/src/main/res/layout/item_detalle_circulo_autor.xml" value="0.22" />
         <entry key="..\:/Users/Arman/AndroidStudioProjects/Consumo-de-Api-Jikan/app/src/main/res/layout/item_prueba_slider.xml" value="0.25" />
         <entry key="..\:/Users/Arman/AndroidStudioProjects/Consumo-de-Api-Jikan/app/src/main/res/layout/item_slider_best.xml" value="0.33" />
+        <entry key="..\:/Users/Arman/AndroidStudioProjects/Consumo-de-Api-Jikan/app/src/main/res/layout/item_slider_principal.xml" value="0.21" />
+        <entry key="..\:/Users/Arman/AndroidStudioProjects/Consumo-de-Api-Jikan/app/src/main/res/layout/item_top.xml" value="0.33" />
         <entry key="..\:/Users/Arman/AndroidStudioProjects/Consumo-de-Api-Jikan/app/src/main/res/menu/bottom_nav.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Arman/AndroidStudioProjects/Proyecto2/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Arman/AndroidStudioProjects/Proyecto2/app/src/main/res/layout/activity_splash.xml" value="0.20416666666666666" />
