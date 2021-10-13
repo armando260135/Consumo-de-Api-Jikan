@@ -1,10 +1,20 @@
 package com.example.proyecto2.views.Fragment;
 
 import android.os.Bundle;
+<<<<<<< HEAD
 import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+=======
+
+import androidx.fragment.app.Fragment;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+>>>>>>> origin/master
 import com.example.proyecto2.R;
 
 /**
@@ -55,7 +65,12 @@ public class SegundoFragment extends Fragment {
     }
 
     @Override
+<<<<<<< HEAD
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+=======
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+>>>>>>> origin/master
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_segundo, container, false);
     }

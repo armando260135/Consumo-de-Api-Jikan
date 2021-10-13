@@ -22,7 +22,11 @@ public class ListaAnimeAdapterBest extends RecyclerView.Adapter<ListaAnimeAdapte
     private ArrayList<AnimeResults> dataset;
     private Context context;
 
+<<<<<<< HEAD
     public ListaAnimeAdapterBest(ArrayList<AnimeResults> animeResultsArrayListSpecial, Context context) {
+=======
+    public ListaAnimeAdapterBest(ArrayList<AnimeResults> animeResultsArrayListSpecial, Context context){
+>>>>>>> origin/master
         this.context = context;
         this.dataset = animeResultsArrayListSpecial;
     }
@@ -82,6 +86,10 @@ public class ListaAnimeAdapterBest extends RecyclerView.Adapter<ListaAnimeAdapte
             super(itemView);
             nombreTextView = itemView.findViewById(R.id.nombreTextView);
             fotoImageView = itemView.findViewById(R.id.fotoImageView);
+<<<<<<< HEAD
+=======
+//          textViewCapitulo = itemView.findViewById(R.id.TextViewCapitulo);
+>>>>>>> origin/master
         }
     }
 

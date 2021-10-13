@@ -1,7 +1,10 @@
 package com.example.proyecto2.Adapter;
 
 import android.content.Context;
+<<<<<<< HEAD
 import android.content.Intent;
+=======
+>>>>>>> origin/master
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,6 +17,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.example.proyecto2.Model.AnimeResults;
 import com.example.proyecto2.R;
+<<<<<<< HEAD
 import com.example.proyecto2.views.AnimeDetalle.AnimeDetalle;
 
 import java.util.ArrayList;
@@ -23,6 +27,16 @@ public class ListaAnimeAdapterTop extends RecyclerView.Adapter<ListaAnimeAdapter
     private Context context;
 
     public ListaAnimeAdapterTop(ArrayList<AnimeResults> animeResultsArrayListTop, Context context) {
+=======
+
+import java.util.ArrayList;
+
+public class ListaAnimeAdapterTop extends RecyclerView.Adapter<ListaAnimeAdapterTop.ViewHolder>{
+    private ArrayList<AnimeResults> dataset;
+    private Context context;
+
+    public ListaAnimeAdapterTop(ArrayList<AnimeResults> animeResultsArrayListTop, Context context){
+>>>>>>> origin/master
         this.context = context;
         this.dataset = animeResultsArrayListTop;
     }
@@ -30,7 +44,11 @@ public class ListaAnimeAdapterTop extends RecyclerView.Adapter<ListaAnimeAdapter
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+<<<<<<< HEAD
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_top, parent, false);
+=======
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_top,parent,false);
+>>>>>>> origin/master
         return new ViewHolder(view);
     }
 
@@ -39,6 +57,7 @@ public class ListaAnimeAdapterTop extends RecyclerView.Adapter<ListaAnimeAdapter
         AnimeResults a = dataset.get(position);
         holder.TextViewTop.setText(a.getTitle());
         holder.TextViewTopSynopsis.setText(a.getSynopsis());
+<<<<<<< HEAD
         Glide.with(context)
                 .load(a.getImage_url())
                 .placeholder(R.drawable.carga4)
@@ -69,6 +88,14 @@ public class ListaAnimeAdapterTop extends RecyclerView.Adapter<ListaAnimeAdapter
             irDetalle.putExtra("Rated", rated);
             context.startActivity(irDetalle);
         });
+=======
+        //holder.textViewCapitulo.setText(a.getEpisodes());
+        Glide.with(context)
+                .load(a.getImage_url())
+                .placeholder(R.drawable.ic_launcher_background)
+                .into(holder.ImageViewTop);
+
+>>>>>>> origin/master
     }
 
     @Override
@@ -76,8 +103,13 @@ public class ListaAnimeAdapterTop extends RecyclerView.Adapter<ListaAnimeAdapter
         return dataset.size();
     }
 
+<<<<<<< HEAD
     public class ViewHolder extends RecyclerView.ViewHolder {
         private TextView TextViewTop, TextViewTopSynopsis;
+=======
+    public class ViewHolder extends RecyclerView.ViewHolder{
+        private TextView TextViewTop,TextViewTopSynopsis;
+>>>>>>> origin/master
         private ImageView ImageViewTop;
 
         public ViewHolder(@NonNull View itemView) {

@@ -9,4 +9,9 @@ public interface AnimeInteractor {
     void obtenerDatosTop();
     void obtenerDatosApiSpecial();
     void obtenerDatosSpecial();
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> origin/master
 }

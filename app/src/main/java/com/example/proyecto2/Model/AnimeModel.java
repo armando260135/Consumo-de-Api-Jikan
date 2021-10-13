@@ -12,6 +12,13 @@ import retrofit2.Response;
 
 public class AnimeModel implements AnimeInteractor{
     private AnimePresenter presenter;
+<<<<<<< HEAD
+=======
+    private static final String TAG="ANIME";
+    private static final String TAG2="ANIMETOP";
+    private static final String TAG3="ANIMEBEST";
+    private Retrofit retrofit;
+>>>>>>> origin/master
     private Context context;
     private List<AnimeRespuesta> animeModelLista;
 
@@ -22,6 +29,7 @@ public class AnimeModel implements AnimeInteractor{
     }
 
     @Override
+<<<<<<< HEAD
     public void obtenerDatosUpComingApi() {
         Call<AnimeRespuesta> call = Conexion.getAnimeService().obtenerListaAnimeUpcoming();
         call.enqueue(new Callback<AnimeRespuesta>() {
@@ -51,6 +59,8 @@ public class AnimeModel implements AnimeInteractor{
     }
 
     @Override
+=======
+>>>>>>> origin/master
     public void obtenerDatosApi() {
         Call<AnimeRespuesta> call = Conexion.getAnimeService().obtenerListaAnimes();
         call.enqueue(new Callback<AnimeRespuesta>() {
@@ -82,13 +92,25 @@ public class AnimeModel implements AnimeInteractor{
     public void obtenerDatosApiTop() {
         Call<AnimeRespuesta> call = Conexion.getAnimeService().obtenerListaAnimesTop();
         call.enqueue(new Callback<AnimeRespuesta>() {
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
             @Override
             public void onResponse(Call<AnimeRespuesta> call, Response<AnimeRespuesta> response) {
                 if (response.isSuccessful()){
                     AnimeRespuesta animeRespuesta = response.body();
                     ArrayList<AnimeResults> animeResultsArrayListTop = animeRespuesta.getResults();
                     presenter.mostrarDatosTop(animeResultsArrayListTop);
+<<<<<<< HEAD
+=======
+                    for (int i=0;i<animeResultsArrayListTop.size();i++){
+                        AnimeResults a = animeResultsArrayListTop.get(i);
+                        Log.i(TAG,"ANIMETOP: "+ a.getTitle());
+
+                    }
+
+>>>>>>> origin/master
                 }else{
                     Toast.makeText(context, "RESPUESTA: " + response.code(), Toast.LENGTH_SHORT).show();
                     return;
@@ -100,11 +122,19 @@ public class AnimeModel implements AnimeInteractor{
                 Toast.makeText(context, "error"+t.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
     }
 
     @Override
     public void obtenerDatosTop() {
         obtenerDatosApiTop();
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
     }
 
     @Override
@@ -117,6 +147,15 @@ public class AnimeModel implements AnimeInteractor{
                     AnimeRespuesta animeRespuesta = response.body();
                     ArrayList<AnimeResults> animeResultsArrayListSpecial = animeRespuesta.getResults();
                     presenter.mostrarDatosSpecial(animeResultsArrayListSpecial);
+<<<<<<< HEAD
+=======
+                    for (int i=0;i<animeResultsArrayListSpecial.size();i++){
+                        AnimeResults a = animeResultsArrayListSpecial.get(i);
+                        Log.i(TAG3,"ANIMEBEST: "+ a.getTitle());
+
+                    }
+
+>>>>>>> origin/master
                 }else{
                     Toast.makeText(context, "RESPUESTA: " + response.code(), Toast.LENGTH_SHORT).show();
                     return;
@@ -128,10 +167,18 @@ public class AnimeModel implements AnimeInteractor{
                 Toast.makeText(context, "error"+t.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
     }
 
     @Override
     public void obtenerDatosSpecial() {
         obtenerDatosApiSpecial();
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
     }
 }

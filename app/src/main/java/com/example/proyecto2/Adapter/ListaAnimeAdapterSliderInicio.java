@@ -1,7 +1,10 @@
 package com.example.proyecto2.Adapter;
 
 import android.content.Context;
+<<<<<<< HEAD
 import android.content.Intent;
+=======
+>>>>>>> origin/master
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,7 +17,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.example.proyecto2.Model.AnimeResults;
 import com.example.proyecto2.R;
+<<<<<<< HEAD
 import com.example.proyecto2.views.AnimeDetalle.AnimeDetalle;
+=======
+>>>>>>> origin/master
 
 import java.util.ArrayList;
 
@@ -27,10 +33,18 @@ public class ListaAnimeAdapterSliderInicio extends RecyclerView.Adapter<ListaAni
         this.dataset = animeResultsArrayListTop;
     }
 
+<<<<<<< HEAD
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_slider_principal, parent, false);
+=======
+
+    @NonNull
+    @Override
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_slider_principal,parent,false);
+>>>>>>> origin/master
         return new ViewHolder(view);
     }
 
@@ -40,6 +54,7 @@ public class ListaAnimeAdapterSliderInicio extends RecyclerView.Adapter<ListaAni
         holder.TextViewNombreInicio.setText(a.getTitle());
         Glide.with(context)
                 .load(a.getImage_url())
+<<<<<<< HEAD
                 .placeholder(R.drawable.carga4)
                 .into(holder.ImageViewSliderPrincipal);
         String imagen = a.getImage_url();
@@ -67,17 +82,27 @@ public class ListaAnimeAdapterSliderInicio extends RecyclerView.Adapter<ListaAni
             irDetalle.putExtra("Rated", rated);
             context.startActivity(irDetalle);
         });
+=======
+                .placeholder(R.drawable.ic_launcher_background)
+                .into(holder.ImageViewSliderPrincipal);
+>>>>>>> origin/master
     }
 
     @Override
     public int getItemCount() {
         return dataset.size();
     }
+<<<<<<< HEAD
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         private ImageView ImageViewSliderPrincipal;
         private TextView TextViewNombreInicio;
 
+=======
+    public class ViewHolder extends RecyclerView.ViewHolder{
+        private ImageView ImageViewSliderPrincipal;
+        private TextView TextViewNombreInicio;
+>>>>>>> origin/master
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             ImageViewSliderPrincipal = itemView.findViewById(R.id.ImageViewSliderPrincipal);

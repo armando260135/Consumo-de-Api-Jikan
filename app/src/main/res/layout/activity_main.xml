@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     android:background="#0C0101"
     tools:context=".views.MainActivity">
+<<<<<<< HEAD
 
 
    <ProgressBar
@@ -20,6 +21,8 @@
        app:layout_constraintStart_toStartOf="parent"
        app:layout_constraintTop_toTopOf="@+id/scrollView2" />
 
+=======
+>>>>>>> origin/master
    <ScrollView
        android:id="@+id/scrollView2"
        android:layout_width="match_parent"
@@ -43,8 +46,12 @@
              android:layout_marginBottom="6dp"
              android:text="Best Anime"
              android:textColor="#FFFFFF"
+<<<<<<< HEAD
              android:textSize="18sp"
              android:visibility="invisible" />
+=======
+             android:textSize="18sp" />
+>>>>>>> origin/master
 
          <TextView
              android:id="@+id/nointernet"
@@ -109,8 +116,12 @@
    <!-- Menu -->
    <FrameLayout
        android:id="@+id/frame_container"
+<<<<<<< HEAD
        android:layout_width="match_parent"
        android:layout_height="match_parent"
+=======
+       android:layout_width="match_parent" android:layout_height="match_parent"
+>>>>>>> origin/master
        android:layout_alignParentTop="true"
        app:layout_behavior="@string/appbar_scrolling_view_behavior"
        />

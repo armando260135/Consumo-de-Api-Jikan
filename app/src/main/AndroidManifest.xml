@@ -12,16 +12,36 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Proyecto2">
         <activity
+<<<<<<< HEAD
             android:name=".views.AnimeBusquedad.AnimeViewBusquedad"
+=======
+            android:name=".views.AnimeDetalle.AnimeDetalleCirculo"
+            android:exported="true" />
+        <activity
+            android:name=".views.AnimeDemoDetalle"
+>>>>>>> origin/master
             android:exported="true" />
         <activity
             android:name=".views.AnimeDetalle.AnimeDetalle"
             android:exported="true" />
         <activity
+<<<<<<< HEAD
             android:name=".views.Menu.AnimeSetting"
             android:exported="true" />
         <activity
             android:name=".views.Menu.AnimeTv"
+=======
+            android:name=".views.AnimeSetting"
+            android:exported="true" />
+        <activity
+            android:name=".views.AnimeTv"
+            android:exported="true" />
+        <activity
+            android:name=".views.Animesearch"
+            android:exported="true" />
+        <activity
+            android:name=".Prueba"
+>>>>>>> origin/master
             android:exported="true" />
         <activity
             android:name=".views.Splash"

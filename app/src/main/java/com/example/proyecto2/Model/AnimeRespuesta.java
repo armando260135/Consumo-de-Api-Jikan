@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class AnimeRespuesta {
     private ArrayList<AnimeResults> results;
 
+
     public ArrayList<AnimeResults> getResults() {
         return results;
     }

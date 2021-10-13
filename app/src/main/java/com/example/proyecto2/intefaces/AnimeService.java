@@ -5,12 +5,16 @@ import retrofit2.Call;
 import retrofit2.http.GET;
 
 public interface AnimeService {
+<<<<<<< HEAD
 
     //slider inicio
     @GET("search/anime?q=type=upcoming")
     Call <AnimeRespuesta> obtenerListaAnimeUpcoming();
 
     //original top 10 today selection
+=======
+    //original top 10
+>>>>>>> origin/master
     @GET("search/anime?q=&order_by=members&sort=desc&page=1&limit=10")
     Call <AnimeRespuesta> obtenerListaAnimes();
 

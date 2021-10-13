@@ -56,6 +56,7 @@ public class ListaAnimeAdapter extends RecyclerView.Adapter<ListaAnimeAdapter.Vi
 
         holder.itemView.setOnClickListener(view -> {
             Intent irDetalle = new Intent(context, AnimeDetalle.class);
+<<<<<<< HEAD
             irDetalle.putExtra("Image", imagen);
             irDetalle.putExtra("Titulo", titulo);
             irDetalle.putExtra("Synopsis", synopsis);
@@ -66,6 +67,18 @@ public class ListaAnimeAdapter extends RecyclerView.Adapter<ListaAnimeAdapter.Vi
             irDetalle.putExtra("End_Date", end_date);
             irDetalle.putExtra("Members", members);
             irDetalle.putExtra("Rated", rated);
+=======
+            irDetalle.putExtra("Image",imagen);
+            irDetalle.putExtra("Titulo",titulo);
+            irDetalle.putExtra("Synopsis",synopsis);
+            irDetalle.putExtra("Episode",episode);
+            irDetalle.putExtra("Score",score);
+            irDetalle.putExtra("Type",type);
+            irDetalle.putExtra("Start_Date",start_date);
+            irDetalle.putExtra("End_Date",end_date);
+            irDetalle.putExtra("Members",members);
+            irDetalle.putExtra("Rated",rated);
+>>>>>>> origin/master
             context.startActivity(irDetalle);
         });
     }

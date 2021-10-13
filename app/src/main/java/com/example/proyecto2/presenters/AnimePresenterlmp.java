@@ -36,11 +36,15 @@ public class AnimePresenterlmp implements AnimePresenter {
     @Override
     public void mostrarDatosSpecial(ArrayList<AnimeResults> animeResultsArrayListSpecial) {
         view.mostrarDatosSpecial(animeResultsArrayListSpecial);
+<<<<<<< HEAD
     }
 
     @Override
     public void obtenerDatosUpComing() {
         animemodel.obtenerDatosUpComing();
+=======
+
+>>>>>>> origin/master
     }
 
     @Override
@@ -52,9 +56,17 @@ public class AnimePresenterlmp implements AnimePresenter {
     public void obtenerDatosTop() {
         animemodel.obtenerDatosTop();
     }
+<<<<<<< HEAD
+=======
+
+    @Override
+    public void obtenerDatosSpecial() {
+        animemodel.obtenerDatosSpecial();
+>>>>>>> origin/master
 
     @Override
     public void obtenerDatosSpecial() {
         animemodel.obtenerDatosSpecial();
     }
+
 }

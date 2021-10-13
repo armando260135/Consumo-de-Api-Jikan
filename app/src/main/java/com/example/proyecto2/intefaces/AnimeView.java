@@ -8,6 +8,11 @@ public interface  AnimeView {
     void mostrarDatos(ArrayList<AnimeResults> animeresultadolista);
     void mostrarDatosTop(ArrayList<AnimeResults> animeResultsArrayListTop);
     void mostrarDatosSpecial(ArrayList<AnimeResults> animeResultsArrayListSpecial);
+<<<<<<< HEAD
     void mostrarProgressBar();
     void ocultarProgressBar();
+=======
+
+
+>>>>>>> origin/master
 }

@@ -1,7 +1,13 @@
 package com.example.proyecto2.views.Fragment;
 
 import android.os.Bundle;
+<<<<<<< HEAD
 import androidx.fragment.app.Fragment;
+=======
+
+import androidx.fragment.app.Fragment;
+
+>>>>>>> origin/master
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -57,7 +63,12 @@ public class PrimerFragment extends Fragment {
     }
 
     @Override
+<<<<<<< HEAD
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+=======
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+>>>>>>> origin/master
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_primer, container, false);
     }
