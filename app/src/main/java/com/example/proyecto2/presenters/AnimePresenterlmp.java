@@ -1,14 +1,11 @@
 package com.example.proyecto2.presenters;
 
 import android.content.Context;
-
 import com.example.proyecto2.Model.AnimeModel;
-import com.example.proyecto2.Model.AnimeRespuesta;
 import com.example.proyecto2.Model.AnimeResults;
 import com.example.proyecto2.intefaces.AnimeInteractor;
 import com.example.proyecto2.intefaces.AnimePresenter;
 import com.example.proyecto2.intefaces.AnimeView;
-
 import java.util.ArrayList;
 
 public class AnimePresenterlmp implements AnimePresenter {
@@ -18,9 +15,13 @@ public class AnimePresenterlmp implements AnimePresenter {
 
     public AnimePresenterlmp(AnimeView view, Context context) {
         this.view = view;
-        animemodel = new AnimeModel(this,context);
+        animemodel = new AnimeModel(this, context);
     }
 
+    @Override
+    public void mostrarDatosUpComing(ArrayList<AnimeResults> animeResultsArrayListUpComing) {
+        view.mostrarDatosUpComing(animeResultsArrayListUpComing);
+    }
 
     @Override
     public void mostrarDatos(ArrayList<AnimeResults> animeresultadolista) {
@@ -35,7 +36,11 @@ public class AnimePresenterlmp implements AnimePresenter {
     @Override
     public void mostrarDatosSpecial(ArrayList<AnimeResults> animeResultsArrayListSpecial) {
         view.mostrarDatosSpecial(animeResultsArrayListSpecial);
+    }
 
+    @Override
+    public void obtenerDatosUpComing() {
+        animemodel.obtenerDatosUpComing();
     }
 
     @Override
@@ -51,7 +56,5 @@ public class AnimePresenterlmp implements AnimePresenter {
     @Override
     public void obtenerDatosSpecial() {
         animemodel.obtenerDatosSpecial();
-
     }
-
 }

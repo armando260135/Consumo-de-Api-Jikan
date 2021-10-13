@@ -11,7 +11,6 @@ import com.airbnb.lottie.LottieAnimationView;
 import com.example.proyecto2.R;
 
 public class Splash extends AppCompatActivity {
-    ImageView splashImage;
     LottieAnimationView lottieAnimationView1,lottieAnimationView2;
 
     @Override
@@ -20,8 +19,6 @@ public class Splash extends AppCompatActivity {
         setContentView(R.layout.activity_splash);
         lottieAnimationView1 = findViewById(R.id.lottie1);
         lottieAnimationView2 = findViewById(R.id.lottie2);
-
-        //lottieAnimationView1.animate().translationY(1600).setDuration(4000).setStartDelay(1000);
 
         new Handler().postDelayed(new Runnable() {
             @Override

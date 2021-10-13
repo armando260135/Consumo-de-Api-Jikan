@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#0C0101"
-    tools:context=".views.AnimeSetting">
+    tools:context=".views.Menu.AnimeSetting">
     <FrameLayout
         android:id="@+id/frame_container"
         android:layout_width="match_parent" android:layout_height="match_parent"

@@ -1,13 +1,10 @@
 package com.example.proyecto2.views.Fragment;
 
 import android.os.Bundle;
-
 import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import com.example.proyecto2.R;
 
 /**
@@ -26,9 +23,6 @@ public class CuartoFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public CuartoFragment() {
-        // Required empty public constructor
-    }
 
     /**
      * Use this factory method to create a new instance of
@@ -58,9 +52,9 @@ public class CuartoFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_cuarto, container, false);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View vista = inflater.inflate(R.layout.fragment_cuarto, container, false);
+        return vista;
     }
+
 }

@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -17,11 +18,11 @@ import com.example.proyecto2.views.AnimeDetalle.AnimeDetalle;
 
 import java.util.ArrayList;
 
-public class ListaAnimeAdapter extends RecyclerView.Adapter<ListaAnimeAdapter.ViewHolder>{
+public class ListaAnimeAdapter extends RecyclerView.Adapter<ListaAnimeAdapter.ViewHolder> {
     private ArrayList<AnimeResults> dataset;
     private Context context;
 
-    public ListaAnimeAdapter(ArrayList<AnimeResults> animeResultsArrayList,Context context){
+    public ListaAnimeAdapter(ArrayList<AnimeResults> animeResultsArrayList, Context context) {
         this.context = context;
         this.dataset = animeResultsArrayList;
     }
@@ -29,17 +30,17 @@ public class ListaAnimeAdapter extends RecyclerView.Adapter<ListaAnimeAdapter.Vi
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_prueba_slider,parent,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_prueba_slider, parent, false);
         return new ViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         AnimeResults a = dataset.get(position);
-        holder.nombreTextView.setText(a.getTitle()+"\n"+"Episodes: "+a.getEpisodes());
+        holder.nombreTextView.setText(a.getTitle() + "\n" + "Episodes: " + a.getEpisodes());
         Glide.with(context)
                 .load(a.getImage_url())
-                .placeholder(R.drawable.ic_launcher_background)
+                .placeholder(R.drawable.carga4)
                 .into(holder.fotoImageView);
 
         String imagen = a.getImage_url();
@@ -55,19 +56,20 @@ public class ListaAnimeAdapter extends RecyclerView.Adapter<ListaAnimeAdapter.Vi
 
         holder.itemView.setOnClickListener(view -> {
             Intent irDetalle = new Intent(context, AnimeDetalle.class);
-            irDetalle.putExtra("Image",imagen);
-            irDetalle.putExtra("Titulo",titulo);
-            irDetalle.putExtra("Synopsis",synopsis);
-            irDetalle.putExtra("Episode",episode);
-            irDetalle.putExtra("Score",score);
-            irDetalle.putExtra("Type",type);
-            irDetalle.putExtra("Start_Date",start_date);
-            irDetalle.putExtra("End_Date",end_date);
-            irDetalle.putExtra("Members",members);
-            irDetalle.putExtra("Rated",rated);
+            irDetalle.putExtra("Image", imagen);
+            irDetalle.putExtra("Titulo", titulo);
+            irDetalle.putExtra("Synopsis", synopsis);
+            irDetalle.putExtra("Episode", episode);
+            irDetalle.putExtra("Score", score);
+            irDetalle.putExtra("Type", type);
+            irDetalle.putExtra("Start_Date", start_date);
+            irDetalle.putExtra("End_Date", end_date);
+            irDetalle.putExtra("Members", members);
+            irDetalle.putExtra("Rated", rated);
             context.startActivity(irDetalle);
         });
     }
+
     @Override
     public int getItemCount() {
         return dataset.size();
@@ -83,7 +85,4 @@ public class ListaAnimeAdapter extends RecyclerView.Adapter<ListaAnimeAdapter.Vi
             fotoImageView = itemView.findViewById(R.id.fotoImageView);
         }
     }
-
-
-
 }
